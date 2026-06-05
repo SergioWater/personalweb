@@ -1,0 +1,152 @@
+{
+  "profile": {
+    "name": "Sergio Aguilar",
+    "tagline": "Computer Science graduate building trading systems, AI, and full-stack products.",
+    "location": "San Jose, CA",
+    "github": "https://github.com/SergioWater",
+    "linkedin": "https://www.linkedin.com/in/sergiowater/",
+    "email": "sergiowater@gmail.com"
+  },
+  "categories": [
+    { "id": "ai", "label": "AI & Computer Vision", "short": "AI / CV", "blurb": "Machine learning, computer vision, and intelligent systems." },
+    { "id": "systems", "label": "Systems & C", "short": "Systems", "blurb": "Low-level, multi-threaded, performance-focused programs." },
+    { "id": "trading", "label": "Trading & Finance", "short": "Trading", "blurb": "Algorithmic trading, backtesting, and market tooling." },
+    { "id": "games", "label": "Game Development", "short": "Games", "blurb": "Real-time multiplayer and Roblox game systems." },
+    { "id": "web", "label": "Web Apps", "short": "Web", "blurb": "Full-stack and front-end web applications." }
+  ],
+  "projects": [
+    {
+      "slug": "gold-trading-algorithm",
+      "title": "Gold Trading Algorithm",
+      "category": "trading",
+      "summary": "Backtested algorithmic trading system for gold futures with Monte Carlo simulation, prop-firm analysis, and live Telegram signals.",
+      "description": "A fully backtested algorithmic trading system for gold futures (GC). It combines a rules-based entry/exit engine with Monte Carlo simulation to stress-test thousands of equity-curve scenarios, prop-firm rule analysis to validate drawdown and daily-loss limits, and a live Telegram bot that pushes real-time trade signals.",
+      "tags": ["Python", "Algorithmic Trading", "Monte Carlo", "Telegram API", "Financial Engineering"],
+      "visibility": "request",
+      "github": "https://github.com/SergioWater/Algo",
+      "demo": "",
+      "highlights": ["Monte Carlo stress-testing of the equity curve", "Prop-firm rule and drawdown analysis", "Live Telegram trade signal delivery"]
+    },
+    {
+      "slug": "crypto-price",
+      "title": "Crypto Price Tracker",
+      "category": "trading",
+      "summary": "Real-time cryptocurrency tracker with interactive charts and portfolio tracking via CoinGecko API.",
+      "description": "A real-time cryptocurrency price tracker with interactive Chart.js graphs and basic portfolio tracking, powered by the CoinGecko API.",
+      "tags": ["JavaScript", "Chart.js", "CoinGecko API", "Finance"],
+      "github": "https://github.com/SergioWater/cryptoPrice",
+      "demo": "",
+      "highlights": ["Live prices via CoinGecko API", "Interactive Chart.js charts", "Portfolio tracking"]
+    },
+    {
+      "slug": "statboard",
+      "title": "STATBOARD — AI Sports Leaderboard",
+      "category": "ai",
+      "summary": "Real-time AI leaderboard for indoor sportsplexes using computer vision and UWB wristbands to auto-track player stats.",
+      "description": "A real-time, AI-powered leaderboard for indoor sportsplexes. It fuses computer-vision player tracking (YOLO) with UWB wristband positioning to automatically capture player stats — goals, distance, speed — and display them on live leaderboards with no manual scorekeeping.",
+      "tags": ["Python", "Computer Vision", "YOLO", "UWB", "Startup", "AI"],
+      "github": "https://github.com/SergioWater",
+      "demo": "",
+      "highlights": ["Computer-vision player tracking with YOLO", "UWB wristband positioning fusion", "Real-time auto-updating leaderboards"]
+    },
+    {
+      "slug": "soccer-video-analysis",
+      "title": "Soccer Video Analysis Pipeline",
+      "category": "ai",
+      "summary": "ML pipeline using YOLO and SoccerNet to track players, detect behaviors, and analyze full 90-minute matches.",
+      "description": "An end-to-end machine-learning pipeline that ingests full 90-minute soccer matches, uses YOLO and SoccerNet data to detect and track players across frames, and surfaces behavioral and positional analytics for the whole match.",
+      "tags": ["Python", "YOLO", "Computer Vision", "Machine Learning", "SoccerNet"],
+      "github": "https://github.com/SergioWater",
+      "demo": "",
+      "highlights": ["Player detection and tracking with YOLO", "Trained/evaluated on SoccerNet data", "Full 90-minute match analysis"]
+    },
+    {
+      "slug": "autonomous-vehicle-simulation",
+      "title": "Autonomous Vehicle Simulation",
+      "category": "ai",
+      "summary": "Simulation environment for autonomous-vehicle algorithms with realistic physics and NEAT-evolved neural drivers.",
+      "description": "A simulation environment for testing autonomous-vehicle algorithms with realistic physics and sensor models. It uses NEAT (NeuroEvolution of Augmenting Topologies) to evolve neural-network drivers that learn to navigate the track over generations.",
+      "tags": ["Python", "Machine Learning", "Computer Vision", "NEAT", "Simulation"],
+      "github": "https://github.com/SergioWater/ai_neat_car",
+      "demo": "",
+      "highlights": ["NEAT neuroevolution of driver networks", "Realistic physics and sensor models", "Generational learning"]
+    },
+    {
+      "slug": "automatic-note",
+      "title": "Automatic Note",
+      "category": "ai",
+      "summary": "Real-time audio transcription app using Python and the Whisper API with multi-threaded capture.",
+      "description": "A desktop application that transcribes audio in real time using Python and the Whisper API. Multi-threaded audio capture keeps recording smooth while transcription runs concurrently.",
+      "tags": ["Python", "Whisper API", "Multi-threading", "AI", "Audio Processing"],
+      "github": "https://github.com/SergioWater/real-time-audio-recorder",
+      "demo": "",
+      "highlights": ["Real-time Whisper transcription", "Multi-threaded audio capture", "Concurrent record + transcribe"]
+    },
+    {
+      "slug": "police-data-with-threads",
+      "title": "Police Data with Threads",
+      "category": "systems",
+      "summary": "Multi-threaded C program analyzing police response times across 500K+ records with mutex-protected critical sections.",
+      "description": "A multi-threaded C program that analyzes police response times across 500K+ records. It uses pthreads to parallelize statistical calculations and mutex locks to protect critical sections, demonstrating safe concurrent access and performance optimization.",
+      "tags": ["C", "Multi-threading", "Data Analysis", "Performance Optimization", "Mutex Locks"],
+      "github": "https://github.com/SergioWater/Police-Data-with-Threads",
+      "demo": "",
+      "highlights": ["pthreads parallel processing", "Mutex-protected critical sections", "500K+ records analyzed"]
+    },
+    {
+      "slug": "roblox-game",
+      "title": "Roblox Survival Game",
+      "category": "games",
+      "summary": "Roblox survival tycoon with procedural tower generation, custom character physics, and drop-zone mechanics in Luau.",
+      "description": "A Roblox survival-tycoon game built in Luau inside Roblox Studio. It features procedural tower generation, custom character physics, and drop-zone mechanics that drive the core gameplay loop.",
+      "tags": ["Luau", "Roblox Studio", "Game Development", "Procedural Generation"],
+      "github": "https://github.com/SergioWater/rectangledropzone",
+      "demo": "",
+      "highlights": ["Procedural tower generation", "Custom character physics", "Drop-zone gameplay mechanics"]
+    },
+    {
+      "slug": "multiplayer-uno",
+      "title": "Online Multiplayer Uno",
+      "category": "games",
+      "summary": "Real-time online multiplayer Uno built as a team project with live game-state synchronization.",
+      "description": "A real-time, online multiplayer Uno card game built as a team project. It synchronizes live game state across players over WebSockets so every client stays in sync as cards are played.",
+      "tags": ["JavaScript", "WebSockets", "Multiplayer", "Team Project"],
+      "github": "https://github.com/SergioWater/project-team-dj",
+      "demo": "",
+      "highlights": ["Real-time multiplayer over WebSockets", "Live game-state synchronization", "Built as a team project"]
+    },
+    {
+      "slug": "discord-clone",
+      "title": "Discord Clone",
+      "category": "web",
+      "summary": "Discord recreation with real-time messaging, channel creation, and Firebase authentication.",
+      "description": "A recreation of the Discord chat app with real-time messaging via Socket.io, channel creation, and Firebase-backed user authentication, styled with Tailwind CSS.",
+      "tags": ["React", "Socket.io", "Tailwind CSS", "Firebase"],
+      "github": "https://github.com/SergioWater/Discord-Clone",
+      "demo": "",
+      "highlights": ["Real-time messaging with Socket.io", "Channel creation", "Firebase authentication"]
+    },
+    {
+      "slug": "netflix-clone",
+      "title": "Netflix Clone",
+      "category": "web",
+      "summary": "Netflix interface replica with responsive layouts and TMDB API integration for real movie data.",
+      "description": "A pixel-faithful replica of the Netflix interface with responsive layouts and TMDB API integration that pulls real movie and show data into the rows and hero banner.",
+      "tags": ["React", "API Integration", "CSS", "TMDB API"],
+      "github": "https://github.com/SergioWater/NetflixClone",
+      "demo": "",
+      "highlights": ["TMDB API integration", "Responsive Netflix-style UI", "Dynamic content rows"]
+    },
+    {
+      "slug": "weather-app",
+      "title": "Weather App",
+      "category": "web",
+      "summary": "Weather app with real-time conditions for any location and geolocation auto-detect via OpenWeather.",
+      "description": "A weather application that provides real-time conditions and forecasts for any location, with geolocation support to auto-detect the user's current position via the OpenWeather API.",
+      "tags": ["React", "OpenWeather API", "Geolocation"],
+      "github": "https://github.com/SergioWater/WeatherApp",
+      "demo": "",
+      "highlights": ["OpenWeather API integration", "Geolocation auto-detect", "Real-time conditions"]
+    }
+  ]
+}
